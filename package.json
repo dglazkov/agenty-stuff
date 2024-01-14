@@ -1,0 +1,23 @@
+{
+  "name": "notree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "breadboard debug boards/conversation.ts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@google-labs/breadboard": "^0.7.1",
+    "@google-labs/breadboard-cli": "^0.1.0",
+    "@google-labs/core-kit": "^0.1.2",
+    "@google-labs/llm-starter": "^0.3.1"
+  }
+}

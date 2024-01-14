@@ -11,13 +11,12 @@ import { starter } from "@google-labs/llm-starter";
 const agent =
   "https://raw.githubusercontent.com/breadboard-ai/breadboard/2ab8da8cce71612b9b6c7e12c25b83129be54cb6/packages/breadboard-web/public/graphs/agent.json";
 
+const gemini =
+  "https://raw.githubusercontent.com/breadboard-ai/breadboard/2ab8da8cce71612b9b6c7e12c25b83129be54cb6/packages/breadboard-web/public/graphs/gemini-generator.json";
+
 export default await recipe(({ topic, generator }) => {
   topic.title("Topic").examples("the universe within us");
-  generator
-    .title("Generator")
-    .examples(
-      "https://raw.githubusercontent.com/breadboard-ai/breadboard/2ab8da8cce71612b9b6c7e12c25b83129be54cb6/packages/breadboard-web/public/graphs/gemini-generator.json"
-    );
+  generator.title("Generator").examples(gemini);
 
   const poetTemplate = starter.promptTemplate({
     $id: "poetTemplate",
